@@ -1,0 +1,117 @@
+[gd_scene load_steps=12 format=3 uid="uid://n7u4gg4oqkvy"]
+
+[ext_resource type="Texture2D" uid="uid://djpt36ei0nqt2" path="res://landscape-cartoon-scene-with-green-trees-on-hills-and-white-fluffy-cloud-in-summer-blue-sky-background-vector.jpg" id="1_8mmhf"]
+[ext_resource type="Script" path="res://buttonHandling.gd" id="1_x6quq"]
+[ext_resource type="PackedScene" uid="uid://q0w8qm5rbv1k" path="res://platform.tscn" id="2_ffobb"]
+[ext_resource type="PackedScene" uid="uid://d0j0g708dlo0q" path="res://object.tscn" id="3_dhrrt"]
+[ext_resource type="Texture2D" uid="uid://c33djoeuhntvv" path="res://assets/PNGs/Hat_.png" id="4_13m0o"]
+[ext_resource type="Texture2D" uid="uid://hmu1glfdww1" path="res://assets/red-cross-button-in-round-shape-png-3473165883.png" id="5_7hmvm"]
+[ext_resource type="Texture2D" uid="uid://lnkh0t7vkuf1" path="res://assets/PNGs/Shirt_.png" id="5_ycmpx"]
+[ext_resource type="Texture2D" uid="uid://dwxoddjrypal" path="res://assets/PNGs/Pant_.png" id="6_umi0w"]
+[ext_resource type="Texture2D" uid="uid://b8jom2k44l2dt" path="res://assets/PNGs/Shoes_.png" id="7_2vwof"]
+[ext_resource type="Texture2D" uid="uid://bifu75ovqan4u" path="res://assets/PNGs/Character_.png" id="9_5aejw"]
+[ext_resource type="Texture2D" uid="uid://bu71apmu32cg5" path="res://assets/Wardrobe.png" id="11_e7q0g"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(248, 7)
+scale = Vector2(1.68, 1.64)
+script = ExtResource("1_x6quq")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(577, 332)
+scale = Vector2(0.662421, 0.675965)
+texture = ExtResource("1_8mmhf")
+
+[node name="wbHat" parent="." groups=["hat_drop"] instance=ExtResource("3_dhrrt")]
+z_index = 2
+position = Vector2(153.571, 257.317)
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="wbHat"]
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_13m0o")
+offset = Vector2(-4.19, -78.12)
+
+[node name="wbShirt" parent="." groups=["shirt_drop"] instance=ExtResource("3_dhrrt")]
+z_index = 2
+position = Vector2(155.952, 539.024)
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="wbShirt"]
+scale = Vector2(0.65, 0.7)
+texture = ExtResource("5_ycmpx")
+offset = Vector2(-19.375, -2.075)
+
+[node name="wbPants" parent="." groups=["pants_drop"] instance=ExtResource("3_dhrrt")]
+z_index = 2
+position = Vector2(155.357, 385.976)
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="wbPants"]
+position = Vector2(8.50361, 35.7137)
+scale = Vector2(0.64, 0.64)
+texture = ExtResource("6_umi0w")
+offset = Vector2(-6.06, -66.99)
+
+[node name="wbShoes" parent="." groups=["shoes_drop"] instance=ExtResource("3_dhrrt")]
+z_index = 2
+position = Vector2(158.929, 131.098)
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="wbShoes"]
+position = Vector2(2.55, 104.383)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("7_2vwof")
+offset = Vector2(-2.695, -237.97)
+
+[node name="hatDrop" parent="." groups=["hat"] instance=ExtResource("2_ffobb")]
+visible = false
+z_index = 2
+position = Vector2(942.262, 256.098)
+scale = Vector2(1.985, 0.494)
+
+[node name="shirtDrop" parent="." groups=["shirt"] instance=ExtResource("2_ffobb")]
+visible = false
+z_index = 2
+position = Vector2(948.214, 455.488)
+scale = Vector2(1.985, 0.694)
+
+[node name="pantsDrop" parent="." groups=["pants"] instance=ExtResource("2_ffobb")]
+visible = false
+z_index = 2
+position = Vector2(938.095, 536.585)
+scale = Vector2(1.985, 0.724)
+
+[node name="shoesDrop" parent="." groups=["shoes"] instance=ExtResource("2_ffobb")]
+z_index = 2
+position = Vector2(942.857, 609.756)
+scale = Vector2(1.985, 0.694)
+
+[node name="stickman" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(941.071, 421.951)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("9_5aejw")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+z_index = 2
+scale = Vector2(0.02, 0.02)
+texture_normal = ExtResource("5_7hmvm")
+
+[node name="OuterBounds" type="ColorRect" parent="."]
+offset_left = -439.881
+offset_top = -317.683
+offset_right = -126.881
+offset_bottom = -267.683
+scale = Vector2(6.67368, 24.3598)
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="WardrobePanel" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(152.381, 324.39)
+scale = Vector2(1.45899, 1.72425)
+texture = ExtResource("11_e7q0g")
+
+[connection signal="pressed" from="TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]
