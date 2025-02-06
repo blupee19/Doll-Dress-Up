@@ -21,12 +21,6 @@ Enable "Install from Unknown Sources" in your device settings.
 
 Install and launch the game.
 
-For developers:
-
-# Clone the repository
-git clone https://github.com/yourusername/dress-and-drop.git
-
-# Open the project in Android Studio and build the APK
 
 🛠️ Tech Stack
 
