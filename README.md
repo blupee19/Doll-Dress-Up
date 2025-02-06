@@ -8,7 +8,7 @@ Made as a small internship project in a day, Dress & Drop is a fun and interacti
 
 Drag & Drop Mechanics – Easily move clothing onto the character.
 
-User-Friendly Interface – Simple and engaging gameplay.
+User-Friendly Interface – Simple gameplay.
 
 
 🚀 Installation
