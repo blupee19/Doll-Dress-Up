@@ -6,24 +6,24 @@ Made as a small internship project in a day, Dress & Drop is a fun and interacti
 
  **Features**
 
-Drag & Drop Mechanics – Easily move clothing onto the character.
+- Drag & Drop Mechanics – Easily move clothing onto the character.
 
-User-Friendly Interface – Simple gameplay.
+- User-Friendly Interface – Simple gameplay.
 
 
  **Installation**
 
 To run the game on an Android device:
 
-Download the latest APK from the Releases section.
+- Download the latest APK from the Releases section.
 
-Enable "Install from Unknown Sources" in your device settings.
+- Enable "Install from Unknown Sources" in your device settings.
 
-Install and launch the game.
+- Install and launch the game.
 
 
  **Tech Stack**
 
-Programming Language: GDScript
+- Programming Language: GDScript
 
-Game Engine: Godot
+- Game Engine: Godot
