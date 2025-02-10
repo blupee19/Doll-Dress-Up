@@ -2,7 +2,7 @@
 
  **About the Game**
 
-Made as a small internship project in a day, Dress & Drop is a fun and interactive dress-up game for Android where players can drag and drop clothing items onto a character to create a stylish outfit.
+Made as a small internship assignment in a day, Dress & Drop is a fun and interactive dress-up game for Android where players can drag and drop clothing items onto a character to create a stylish outfit.
 
  **Features**
 
