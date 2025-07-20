@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bu71apmu32cg5" path="res://assets/Wardrobe.png" id="11_e7q0g"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(248, 7)
+position = Vector2(5, -5)
 scale = Vector2(1.68, 1.64)
 script = ExtResource("1_x6quq")
 
@@ -66,26 +66,23 @@ texture = ExtResource("7_2vwof")
 offset = Vector2(-2.695, -237.97)
 
 [node name="hatDrop" parent="." groups=["hat"] instance=ExtResource("2_ffobb")]
-visible = false
 z_index = 2
 position = Vector2(942.262, 256.098)
 scale = Vector2(1.985, 0.494)
 
 [node name="shirtDrop" parent="." groups=["shirt"] instance=ExtResource("2_ffobb")]
-visible = false
 z_index = 2
 position = Vector2(948.214, 455.488)
 scale = Vector2(1.985, 0.694)
 
 [node name="pantsDrop" parent="." groups=["pants"] instance=ExtResource("2_ffobb")]
-visible = false
 z_index = 2
-position = Vector2(938.095, 536.585)
-scale = Vector2(1.985, 0.724)
+position = Vector2(938.095, 532.927)
+scale = Vector2(1.985, 0.524365)
 
 [node name="shoesDrop" parent="." groups=["shoes"] instance=ExtResource("2_ffobb")]
 z_index = 2
-position = Vector2(942.857, 609.756)
+position = Vector2(942.857, 613.415)
 scale = Vector2(1.985, 0.694)
 
 [node name="stickman" type="Sprite2D" parent="."]

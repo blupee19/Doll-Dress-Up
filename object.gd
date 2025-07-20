@@ -5,6 +5,7 @@ var isInsideDrop = false
 var bodyRef
 var offset: Vector2
 var initPos: Vector2
+var panelPos = self.position
 
 func _process(delta: float) -> void:
 	if draggable:
